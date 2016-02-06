@@ -10,6 +10,7 @@
         <title>Portfolio d'Alpha BAH</title>
         <link href="css/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="css/cv.css" rel="stylesheet" type="text/css"/>
     </head>
     <body> 
         <nav class="navbar navbar-inverse navbar-fixed-top">     
@@ -24,13 +25,13 @@
                     <a class="navbar-brand" href="#">Mon portfolio</a> </div>  
                 <div id="navbar" class="navbar-collapse collapse">  
                     <ul class="nav navbar-nav">
-                        <li class="active"> 
+                        <li> 
                             <a href="index.html">
                                 <span class="glyphicon glyphicon-home"></span>
                                 Accueil 
                             </a>
                         </li> 
-                        <li><a href="cv.html"><span class="glyphicon glyphicon-object-align-top"></span> CV</a></li> 
+                        <li class="active"><a href="cv.html"><span class="glyphicon glyphicon-object-align-top"></span> CV</a></li> 
                         <li class="dropdown">   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"> 
                                 <span class="glyphicon glyphicon-list-alt"></span> Réalisations       <span class="caret"></span>   </a> 
                             <ul class="dropdown-menu" role="menu">  
@@ -51,21 +52,36 @@
         </nav> 
 
         <!-- Main jumbotron for a primary marketing message or call to action --> 
-        <div class="jumbotron">  
-            <div class="container"> 
-                <h1>Bonjour et bienvenue sur mon portfolio !</h1>  
-                <p>   
-
-                    <img id="maPhoto" class="pull-left img-rounded" src="images/Capture.PNG" alt="Ma photo d'identité" /> 
-                    Je m'appelle Alpha Boubacar BAH, j'ai 35 ans et ce site a pour vocation de me présenter en tant que personne, 
-                    et stagiaire en dévéloppement web et en  tant que future professionnelle de l'informatique. 
-                </p>
-                <p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">En savoir plus &raquo;</a>
-                </p> 
-            </div>
-        </div>
-
+       <div class="row cadreCV">  
+           <div id="cv-entete" class="text-center">   
+               <div id="cv-photo">     
+                   <img src="images/Capture.PNG" alt="Ma photo d'identité" />  
+               </div>   
+               <div id="cv-intro">  
+                   <h1>Bonjour, je m'appelle <span>Alpha</span> et voici mon CV</h1>  
+               </div> 
+           </div> 
+       </div>  
+        
+        <div class="row cadreCV"> 
+            <div class="col-xs-12 col-sm-7">  
+                <!-- Partie gauche -->  
+                <div class="rubrique"> 
+                    <h2><span class="glyphicon glyphicon-comment"></span> En quelques mots...</h2> 
+                    <p>J'ai 21 ans, j'habite Toulon et je suis passionnée d'informatique et de nouvelles
+                        technologies depuis mon plus jeune âge. Je suis actuellement un    
+                        BTS Services Informatiques aux Organisations ce qui m'a décidé à aller au delà de la passion, 
+                        afin de faire de l'informatique et plus particulièrement    
+                        du développement d'applications, mon métier ! 
+                    </p> 
+                </div>
+            </div>   
+            <div class="col-xs-12 col-sm-5">    
+                <!-- Partie droite --> 
+            </div> 
+        </div>  
+        
+        
         <footer>
             <div class="container">   
                 <div class="row">     
